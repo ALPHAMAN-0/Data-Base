@@ -106,13 +106,8 @@ A structured system to store and manage data (e.g., MySQL, MongoDB).
 ## How to Use This Repository
 1. Clone the repository:
    ```bash
-   git clone htt
+   git clone https://github.com/ALPHAMAN-0/Data-Base.git
 - **Databases**: Contains database-specific learning materials.
 - **Docker**: Docker-related files and configurations.
 - **ER Diagrams**: Resources for designing ER diagrams.
 - **Practice**: Hands-on practice exercises.
-## How to Use This Repository
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/ALPHAMAN-0/Data-Base.git
-   ```
