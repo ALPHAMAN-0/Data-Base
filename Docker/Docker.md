@@ -93,3 +93,8 @@ A quick reference for essential Docker commands categorized by functionality.
 
 ---
 ### 🚀 Happy Dockering!
+
+### How to use yaml file 
+  ```sh
+     docker compse -f <ymal file name> down
+  ```
