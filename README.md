@@ -77,14 +77,19 @@ A structured system to store and manage data (e.g., MySQL, MongoDB).
 - Production considerations
 
 ## ER Diagrams
+## What is ER Diagram ?
+There's lot of moving information in a dababase and understanding how the many elements of database
+interact with each other,enginners need a visual way to understand how all the separate elements are related to each ohter and they are working together
+
+To show this they build entity relationship diagrams
 
 ### 1. Fundamentals
-- Entity types
-- Attributes
-- Relationships
-- Cardinality
-- Constraints
-
+- Entity types : Rectangles
+- Attributes   : Ellipses
+- Relationships: Diamonds
+- Cardinality  : 
+- Constraints  :
+- Primary Key  : underline
 ### 2. Design Process
 1. Identify entities
 2. Define attributes
