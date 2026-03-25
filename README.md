@@ -1,119 +1,60 @@
-# Database & Docker Learning Repository
-![image alt](https://github.com/ALPHAMAN-0/Data-Base/blob/3eee8897aef57f3fdc93b31fc3f8080964963216/Image/image1.png)
+# Database and Docker Learning
 
-A complete guide to databases, Docker, ER diagrams, and hands-on practice. 🗃️🐳
-
----
-
-## Table of Contents
-1. [Database Fundamentals](#database-fundamentals)
-2. [Docker for Databases](#docker-for-databases)
-3. [ER Diagrams](#er-diagrams)
-4. [Repository Structure](#repository-structure)
-5. [How to Use This Repository](#how-to-use-this-repository)
-6. [Contributing](#contributing)
-7. [License](#license)
+A hands-on learning repository covering **relational databases**, **SQL**, **ER diagram design**, and **Docker** containerization for database environments.
 
 ---
 
-## Database Fundamentals
+## Contents
 
-### 1. What is a Database?
-A structured system to store and manage data (e.g., MySQL, MongoDB).
+| Folder | Description | Key Concepts |
+|--------|-------------|--------------|
+| **DATA BASE** | SQL scripts, AIUB course materials, and lab tasks | SQL queries, Oracle XE, HR schema, database fundamentals |
+| **Docker** | Docker commands cheat sheet and MongoDB setup | Container management, Docker Compose, YAML configuration |
+| **ER Diagram** | Entity-Relationship diagram practice | E-commerce ER design, Cricket Club database design |
+| **Image** | Repository images and diagrams | Supporting visual assets |
 
-### 2. Why We Need Databases?
-- Centralized data storage
-- ACID compliance (Atomicity, Consistency, Isolation, Durability)
-- Concurrent user access
-- Data integrity and security
-- Efficient data retrieval and management
+---
 
-### 3. How Databases Work
-- Relational (SQL) vs. NoSQL
-- CRUD operations (Create, Read, Update, Delete)
-- Indexing and query optimization
-- Transaction management
-- Database normalization
-- Backup and recovery
+## DATA BASE
 
-### 4. When to Use Databases?
-- Applications requiring persistent storage
-- Complex data relationships
-- High-volume transactions
-- Data analysis and reporting
-- Multi-user applications
+| Resource | Description |
+|----------|-------------|
+| `HR.sql` | HR schema SQL script for practice |
+| `Inturduction/` | Introduction to database concepts with screenshots |
+| `Oracle-XE/` | Oracle Express Edition setup materials |
+| `AIUB Course/` | Course slides (8 lectures) and lab assignments |
+| `Task/` | SQL lab tasks and exercises |
 
-### 5. Types of Databases
-- **Relational**: Structured data (MySQL, PostgreSQL)
-  - Examples and use cases
-  - Basic SQL queries
-- **Document**: JSON data (MongoDB)
-  - Document structure
-  - CRUD operations
-- **Graph**: Relationships (Neo4j)
-  - Graph theory basics
-  - Common applications
-- **Time-Series**: Metrics (InfluxDB)
-  - Time-series concepts
-  - Implementation examples
+## Docker
 
-## Docker for Databases
+- **Docker.md** -- Commands cheat sheet covering images, containers, volumes, networks, and Docker Hub
+- **MongoDB.yaml** -- Docker Compose file for setting up a MongoDB instance
 
-### 1. Docker Basics
-- Container concepts
-- Docker architecture
-- Basic commands
-- Dockerfile syntax
+## ER Diagram
 
-### 2. Database Containerization
-- Database images
-- Volume management
-- Network configuration
-- Security best practices
+| Diagram | Tool |
+|---------|------|
+| Cricket Club Database | draw.io |
+| E-commerce Database | draw.io |
 
-### 3. Docker Compose
-- Multi-container setup
-- Environment variables
-- Service dependencies
-- Production considerations
+---
 
-## ER Diagrams
-## What is ER Diagram ?
-There's lot of moving information in a dababase and understanding how the many elements of database
-interact with each other,enginners need a visual way to understand how all the separate elements are related to each ohter and they are working together
+## Prerequisites
 
-To show this they build entity relationship diagrams
+- Oracle XE or any SQL-compatible database (MySQL, PostgreSQL)
+- Docker and Docker Compose (for containerization section)
+- draw.io or any `.drawio` compatible editor (for ER diagrams)
 
-### 1. Fundamentals
-- Entity types : Rectangles
-- Attributes   : Ellipses
-- Relationships: Diamonds
-- Cardinality  : 
-- Constraints  :
-- Primary Key  : underline
-### 2. Design Process
-1. Identify entities
-2. Define attributes
-3. Establish relationships
-4. Apply constraints
-5. Normalize design
+## How to Use
 
-### 3. Practical Examples
-- E-commerce system
-- Library management
-- Social media platform
-- Inventory system
-
-## Repository Structure
-- **Databases**: Contains database-specific learning materials.
-- **Docker**: Docker-related files and configurations.
-- **ER Diagrams**: Resources for designing ER diagrams.
-- **Practice**: Hands-on practice exercises.
-## How to Use This Repository
 1. Clone the repository:
    ```bash
    git clone https://github.com/ALPHAMAN-0/Data-Base.git
-- **Databases**: Contains database-specific learning materials.
-- **Docker**: Docker-related files and configurations.
-- **ER Diagrams**: Resources for designing ER diagrams.
-- **Practice**: Hands-on practice exercises.
+   ```
+2. **SQL Practice**: Load `HR.sql` into your database instance and run queries.
+3. **Docker Setup**: Follow `Docker/Docker.md` for commands, or run the MongoDB compose file:
+   ```bash
+   cd Docker/How\ to\ install\ mongo/
+   docker compose -f MongoDB.yaml up
+   ```
+4. **ER Diagrams**: Open `.drawio` files at [app.diagrams.net](https://app.diagrams.net) or in VS Code with the Draw.io extension.
